@@ -1,0 +1,8 @@
+version: "3"
+services:
+  samba:
+    build: .
+    ports:
+      - 445:445
+    restart: always
+    container_name: samba
