@@ -6,3 +6,5 @@ services:
       - 445:445
     restart: always
     container_name: samba
+    volumes:
+      - ./data:/share
