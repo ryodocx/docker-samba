@@ -1,7 +1,7 @@
 FROM alpine:3.9
 
 RUN apk add tzdata && cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
-RUN apk add samba-server gettext
+RUN apk add samba-server gettext samba-winbind
 
 COPY entrypoint.sh /opt/entrypoint.sh
 COPY smb.conf /opt/smb.conf.template
